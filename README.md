@@ -39,3 +39,7 @@ src/
 
 # 📜 Licencia
 Este proyecto está bajo la licencia MIT 
+
+# 📫 Contacto
+- Autor: Ezequiel Lopez
+- Mail: ezequiel.lopez.vallejos@gmail.com
