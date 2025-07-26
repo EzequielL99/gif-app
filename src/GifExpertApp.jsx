@@ -23,10 +23,13 @@ export default function GifExpertApp() {
     <div className="min-h-screen bg-zinc-900 text-white">
       <Header onAddCategory={onAddCategory} />
 
-      <CategoryList
-        categories={categories}
-        onDeleteCategory={onDeleteCategory}
-      />
+      {/* Lista de categorías buscadas */}
+      {categories.length > 0 && (
+        <CategoryList
+          categories={categories}
+          onDeleteCategory={onDeleteCategory}
+        />
+      )}
 
       {/* Listado de Gif */}
       {categories.length === 0 && (

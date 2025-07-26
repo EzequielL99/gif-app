@@ -18,8 +18,8 @@ export default function GifGrid({ category }) {
           <Loader />
         ) : (
           <ul className="list-none grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {images.map((image) => (
-              <GifItem key={image.id} {...image} />
+            {images.map((image, index) => (
+              <GifItem key={image.id} {...image} index={index} />
             ))}
           </ul>
         )}
