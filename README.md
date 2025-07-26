@@ -1,12 +1,42 @@
-# React + Vite
+# GIF Expert App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación para la búsqueda de búsqueda y consulta de GIFs. Proyecto inspirado a partir del curso de ReactJS de Fernando Herrera.
 
-Currently, two official plugins are available:
+# 🛠 Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛ ReactJS + JavaScript Vanilla
+- 💅 Tailwind CSS
+- 📦 Vite
+- 🥏 Framer Motion (Animaciones)
 
-## Expanding the ESLint configuration
+# 📂 Estructura del proyecto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+src/
+├── components/
+├── helpers/
+├── hooks/
+├── GifExpertApp.jsx
+├── main.jsx
+└── styles.css
+
+# 💻 Instalación y uso
+## Clonar el repositorio
+
+git clone https://github.com/EzequielL99/gif-app
+
+## Instalar dependencias
+
+npm install
+
+## Iniciar el servidor de desarrollo
+
+npm run dev
+
+# 📌 Funcionalidades
+- Búsqueda múltiple de GIFs
+- Presentación de los GIFs para el término de busca definido
+- Listado de cada término de búsqueda realizado
+- Eliminación de términos de búsqueda
+
+# 📜 Licencia
+Este proyecto está bajo la licencia MIT 
