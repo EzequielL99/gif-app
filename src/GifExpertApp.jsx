@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import AddCategory from "./components/AddCategory";
-import GifGridItem from "./components/GifGridItem";
+import GifGrid from "./components/GifGrid";
+import Header from "./components/Header";
 
 export default function GifExpertApp() {
-  const [categories, setCategories] = useState(["One Punch"]);
+  const [categories, setCategories] = useState([]);
 
   const onAddCategory = (newCategory) => {
     // Validar si ya existe
@@ -14,14 +15,14 @@ export default function GifExpertApp() {
 
   return (
     <>
-      <h1>Gif Expert App</h1>
+      <Header />
 
       {/* Input */}
       <AddCategory onAddCategory={onAddCategory} />
 
       {/* Listado de Gif */}
       {categories.map((category) => (
-        <GifGridItem category={category} key={category} />
+        <GifGrid category={category} key={category} />
       ))}
     </>
   );
