@@ -8,11 +8,11 @@ export default function useFetchGifs(category) {
   const getImages = async () => {
     const newImages = await getGifs(category);
     setImages(newImages);
+    setIsLoading(false);
   };
 
   useEffect(() => {
     getImages();
-    setIsLoading(false);
   }, []);
 
   return {

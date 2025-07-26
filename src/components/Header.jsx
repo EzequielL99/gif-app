@@ -1,8 +1,21 @@
-export default function Header() {
+import { useState } from "react";
+
+export default function Header({ onAddCategory }) {
+  const [inputValue, setInputValue] = useState("");
+
+  const handleChange = (e) => {
+    setInputValue(e.target.value);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log("SUBMIT");
+    const newCategory = inputValue.trim();
+    // Validacion
+    if (newCategory.length <= 1) return;
+
+    onAddCategory(newCategory);
+    setInputValue(""); // Limpiar el input después de agregar la categoría
   };
 
   return (
@@ -18,6 +31,7 @@ export default function Header() {
         <form
           className="w-full sm:w-auto flex items-center gap-2"
           onSubmit={handleSubmit}
+          noValidate
         >
           <input
             type="text"
@@ -25,6 +39,8 @@ export default function Header() {
             className="w-full sm:w-64 px-4 py-2 rounded-lg bg-gray-800 
                 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-400"
             aria-label="Buscar GIFs"
+            value={inputValue}
+            onChange={handleChange}
           />
           <button
             type="submit"
