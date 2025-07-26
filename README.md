@@ -20,17 +20,14 @@ src/
 └── styles.css
 
 # 💻 Instalación y uso
-## Clonar el repositorio
+    - Clonar el repositorio
+        git clone https://github.com/EzequielL99/gif-app
 
-git clone https://github.com/EzequielL99/gif-app
+    - Instalar dependencias
+        npm install
 
-## Instalar dependencias
-
-npm install
-
-## Iniciar el servidor de desarrollo
-
-npm run dev
+    - Iniciar el servidor de desarrollo
+        npm run dev
 
 # 📌 Funcionalidades
 - Búsqueda múltiple de GIFs
