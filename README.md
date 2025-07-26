@@ -11,13 +11,15 @@ Aplicación para la búsqueda de búsqueda y consulta de GIFs. Proyecto inspirad
 
 # 📂 Estructura del proyecto
 
+```bash
 src/
-├── components/
-├── helpers/
-├── hooks/
-├── GifExpertApp.jsx
-├── main.jsx
-└── styles.css
+├── components/          # Componentes reutilizables (botones, tarjetas, etc.)
+├── helpers/             # Funciones de ayuda
+├── hooks/               # Custom Hooks
+├── GifExpertApp.jsx     # Componente raíz
+├── styles.css           # Estilos CSS
+└── main.jsx             # Punto de entrada principal
+```
 
 # 💻 Instalación y uso
     - Clonar el repositorio
